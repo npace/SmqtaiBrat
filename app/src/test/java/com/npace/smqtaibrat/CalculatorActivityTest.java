@@ -2,12 +2,12 @@ package com.npace.smqtaibrat;
 
 import android.widget.TextView;
 
+import com.npace.smqtaibrat.support.CustomGradleTestRunner;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
-import org.robolectric.RobolectricGradleTestRunner;
-import org.robolectric.annotation.Config;
 
 import static com.npace.smqtaibrat.support.Asserts.assertViewIsVisible;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -17,8 +17,7 @@ import static org.junit.Assert.assertNotNull;
 /**
  * Created by npace on 005, 05-Dec-15.
  */
-@RunWith(RobolectricGradleTestRunner.class)
-@Config(constants = BuildConfig.class, sdk = 19)
+@RunWith(CustomGradleTestRunner.class)
 public class CalculatorActivityTest {
     private CalculatorActivity activity;
 
