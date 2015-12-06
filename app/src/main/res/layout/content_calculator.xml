@@ -12,9 +12,10 @@
     tools:context="com.npace.smqtaibrat.CalculatorActivity"
     tools:showIn="@layout/activity_calculator">
 
-    <TextView
-        android:id="@+id/welcome_text"
-        android:layout_width="wrap_content"
+    <fragment
+        android:id="@+id/display_fragment"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:name="com.npace.smqtaibrat.DisplayFragment"
+        tools:layout="@layout/fragment_display" />
 </RelativeLayout>
